@@ -14,11 +14,13 @@ Almost all test are setup to test the simple web application Square Roots. Which
 To run the test the following steps should be followed:
 
 +   Make sure at least [Python 2.7](https://www.python.org/downloads/release/python-2712/) is installed:
+
     ```
         $ python -V
         e.g. : Python 2.7.11+
     ```
 +   Also make sure Python's [Pip](https://pypi.python.org/pypi/pip) is installed (should be default installed):
+
     ```
         $ pip -V
         e.g. :  pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
