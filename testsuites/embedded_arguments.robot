@@ -6,11 +6,11 @@ Suite Teardown  Close Browser
 
 *** Variables ***
 ${BROWSER}    Chrome
-${URL}        http://www.ict.rocks/squareroots
+${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
 The Square Root Of ${squareroot} Should Be ${result}
-  Input Text  id=input_0  ${squareroot}
+  Input Text  id=inputField  ${squareroot}
   Click Button  id=calcBtn
   Wait Until Element Is Visible  css=h2.ng-binding
   Element Text Should Be  css=h2.ng-binding  ${result}
