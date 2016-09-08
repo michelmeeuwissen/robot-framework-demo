@@ -12,10 +12,10 @@ ${URL}        http://squareroots.jdriven.com
 *** Keywords ***
 Calculate Square Root
   [Arguments]  ${squareroot}  ${result}
-  Input Text  id=inputField  ${squareroot}
-  Click Button  id=calcBtn
-  Wait Until Element Is Visible  css=h2.ng-binding
-  Element Text Should Be  css=h2.ng-binding  ${result}
+    Input Text                       id=inputField        ${squareroot}
+    Click Button                     id=calcBtn
+    Wait Until Element Is Visible    id=outputField
+    Element Text Should Be           id=outputField    ${result}
 
 *** Test Cases ***      SQUARE ROOT    RESULT  
 Square Root Of 1 Is     1              1
