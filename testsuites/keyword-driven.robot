@@ -4,7 +4,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${BROWSER}    Chrome
-${URL}        http://www.ict.rocks/squareroots
+${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
 Go To Home Of Square Roots
