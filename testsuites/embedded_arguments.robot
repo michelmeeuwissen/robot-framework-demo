@@ -10,7 +10,7 @@ ${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
 The Square Root Of ${squareroot} Should Be ${result}
-    Input Text                       id=inputField        ${squareroot}
+    Input Text                       id=inputField     ${squareroot}
     Click Button                     id=calcBtn
     Wait Until Element Is Visible    id=outputField
     Element Text Should Be           id=outputField    ${result}
@@ -32,3 +32,4 @@ Calculate Square Roots (template with embedded arguments)
   16    4
   25    5
   36    6
+
