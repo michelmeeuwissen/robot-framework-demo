@@ -19,7 +19,7 @@ To run the test the following steps should be followed:
         $ python -V
         e.g. : Python 2.7.11+
     ```
-+   Also make sure Python's [Pip](https://pypi.python.org/pypi/pip) is installed (should be default installed):
++   Also make sure Python's [Pip](https://pypi.python.org/pypi/pip) is installed (Normally it should be installed when Python is installed):
 
     ```
         $ pip -V

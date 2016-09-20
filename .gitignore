@@ -1,9 +1,11 @@
 .idea/
 /libspecs/
 
+
 red.xml
 .project
 log.html
 output.xml
 report.html
 *selenium-screenshot*
+/robot-framework-demo.iml

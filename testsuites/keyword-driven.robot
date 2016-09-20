@@ -15,4 +15,3 @@ Verify Page Title
   Go To Home Of Square Roots
   Title Should Be  Square Roots- Let the Muppets do the work
   [Teardown]  Close Browser
-
