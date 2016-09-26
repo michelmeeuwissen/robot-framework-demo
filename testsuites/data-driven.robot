@@ -1,7 +1,7 @@
 #data-driven.robot
 *** Settings ***
 Library           Selenium2Library
-FORCE TAGS        data-driven
+Force Tags        data-driven
 Suite Setup       Open Browser             ${URL}    ${BROWSER}
 Suite Teardown    Close Browser
 Test Template     Calculate Square Root
@@ -13,10 +13,10 @@ ${URL}        http://squareroots.jdriven.com
 *** Keywords ***
 Calculate Square Root
   [Arguments]  ${squareroot}  ${result}
-    Input Text                       id=inputField     ${squareroot}
-    Click Button                     id=calcBtn
-    Wait Until Element Is Visible    id=outputField
-    Element Text Should Be           id=outputField    ${result}
+  Input Text                       id=inputField     ${squareroot}
+  Click Button                     id=calcBtn
+  Wait Until Element Is Visible    id=outputField
+  Element Text Should Be           id=outputField    ${result}
 
 *** Test Cases ***      SQUARE ROOT    RESULT  
 Square Root Of 1 Is     1              1

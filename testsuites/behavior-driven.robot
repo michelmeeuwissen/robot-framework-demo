@@ -1,7 +1,7 @@
 #behavior-driven.robot
 *** Settings ***
 Library         Selenium2Library
-FORCE TAGS      behavior-driven
+Force Tags      behavior-driven
 Suite Teardown  Close Browser
 
 *** Variables ***

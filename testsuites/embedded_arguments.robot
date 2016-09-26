@@ -1,7 +1,7 @@
 #embedded_arguments.robot
 *** Settings ***
 Library         Selenium2Library
-FORCE TAGS      embedded-arguments
+Force Tags      embedded-arguments
 Suite Setup     Open Browser  ${URL}  ${BROWSER}
 Suite Teardown  Close Browser
 

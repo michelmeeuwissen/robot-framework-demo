@@ -1,7 +1,7 @@
 #keyword-driven.robot
 *** Settings ***
 Library         Selenium2Library
-FORCE TAGS      keyword-driven
+Force Tags      keyword-driven
 
 *** Variables ***
 ${BROWSER}    Firefox
