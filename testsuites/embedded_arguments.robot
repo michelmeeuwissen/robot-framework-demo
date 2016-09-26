@@ -1,11 +1,12 @@
 #embedded_arguments.robot
 *** Settings ***
-Library  Selenium2Library
-Suite Setup  Open Browser  ${URL}  ${BROWSER}
+Library         Selenium2Library
+FORCE TAGS      embedded-arguments
+Suite Setup     Open Browser  ${URL}  ${BROWSER}
 Suite Teardown  Close Browser
 
 *** Variables ***
-${BROWSER}    Chrome
+${BROWSER}    Firefox
 ${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***

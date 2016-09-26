@@ -1,12 +1,13 @@
 #data-driven.robot
 *** Settings ***
 Library           Selenium2Library
+FORCE TAGS        data-driven
 Suite Setup       Open Browser             ${URL}    ${BROWSER}
 Suite Teardown    Close Browser
 Test Template     Calculate Square Root
 
 *** Variables ***
-${BROWSER}    Chrome
+${BROWSER}    Firefox
 ${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***

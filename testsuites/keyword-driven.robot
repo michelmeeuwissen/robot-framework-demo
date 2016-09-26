@@ -1,17 +1,21 @@
 #keyword-driven.robot
 *** Settings ***
-Library  Selenium2Library
+Library         Selenium2Library
+FORCE TAGS      keyword-driven
 
 *** Variables ***
-${BROWSER}    Chrome
+${BROWSER}    Firefox
 ${URL}        http://squareroots.jdriven.com
+${TITLE}      Square Roots- Let the Muppets do the work
 
 *** Keywords ***
 Go To Home Of Square Roots
   Open Browser  ${URL}  ${BROWSER}
+  Title Should Be  ${TITLE}
   
 *** Test Cases ***
-Verify Page Title
+Verify Page Header
   Go To Home Of Square Roots
-  Title Should Be  Square Roots- Let the Muppets do the work
+  Page Should Contain Element  xpath=//h2  Square Roots!    
   [Teardown]  Close Browser
+

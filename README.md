@@ -11,7 +11,7 @@ Almost all test are setup to test the simple web application Square Roots. Which
 
 ####How To Start
 
-To run the test the following steps should be followed:
+To run the tests the following steps should be followed:
 
 +   Make sure at least [Python 2.7](https://www.python.org/downloads/release/python-2712/) is installed:
 
@@ -39,12 +39,25 @@ To run the test the following steps should be followed:
         e.g. : Robot Framework 3.0 (Python 2.7.12 on linux2)
     ```
 
++   Before we can run the Selenium test suites within this project we need to install Firefox because the tests are setup to run under Firefox. A Selenium Driver for Firefox is not needed.
+
 +   **Help?** Of course there are 1001 options to install or run Robot. See [this](https://github.com/robotframework/robotframework/blob/master/INSTALL.rst) page for more info and please check the [same](https://github.com/robotframework/robotframework/blob/master/INSTALL.rst) page if you are in trouble during the installation.
 
 ##### Run the tests
+Running the tests is very easy:
+```
+    $ python -m robot.run testsuites
+```    
+`testsuites` is in this case the folder where the tests are located
 
-*TODO*
 
+To run a part of your test suite you can add a tag name to your command line:
+```
+    $ python -m robot.run --include behavior-driven testsuites
+```    
+With this command we only run the test suites , or test cases with the `behavior-driven` tag. To exclude tests you can use the `--exclude` parameter
+
+See `$ python -m robot.run --help` for more information
 
 
 

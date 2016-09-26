@@ -1,10 +1,11 @@
 #behavior-driven.robot
 *** Settings ***
-Library  Selenium2Library
+Library         Selenium2Library
+FORCE TAGS      behavior-driven
 Suite Teardown  Close Browser
 
 *** Variables ***
-${BROWSER}    Chrome
+${BROWSER}    Firefox
 ${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
