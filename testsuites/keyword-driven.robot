@@ -1,11 +1,9 @@
-#keyword-driven.robot
 *** Settings ***
 Library         Selenium2Library
+Resource        ${CURDIR}${/}..${/}global${/}keywords.robot
 Force Tags      keyword-driven
 
 *** Variables ***
-${BROWSER}    Firefox
-${URL}        http://squareroots.jdriven.com
 ${TITLE}      Square Roots- Let the Muppets do the work
 
 *** Keywords ***

@@ -1,13 +1,10 @@
 #embedded_arguments.robot
 *** Settings ***
 Library         Selenium2Library
+Resource        ${CURDIR}${/}..${/}global${/}keywords.robot
 Force Tags      embedded-arguments
 Suite Setup     Open Browser  ${URL}  ${BROWSER}
 Suite Teardown  Close Browser
-
-*** Variables ***
-${BROWSER}    Firefox
-${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
 The Square Root Of ${squareroot} Should Be ${result}

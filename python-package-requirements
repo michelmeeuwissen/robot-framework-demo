@@ -1,4 +1,5 @@
 robotframework
+requests
 robotframework-requests
 robotframework-sudslibrary
 robotframework-selenium2library

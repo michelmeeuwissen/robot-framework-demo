@@ -1,12 +1,9 @@
 #behavior-driven.robot
 *** Settings ***
 Library         Selenium2Library
+Resource        ${CURDIR}${/}..${/}global${/}keywords.robot
 Force Tags      behavior-driven
 Suite Teardown  Close Browser
-
-*** Variables ***
-${BROWSER}    Firefox
-${URL}        http://squareroots.jdriven.com
 
 *** Keywords ***
 Home Of Square Roots Is Open

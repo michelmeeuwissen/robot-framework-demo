@@ -9,3 +9,4 @@ output.xml
 report.html
 *selenium-screenshot*
 /robot-framework-demo.iml
+/debug.txt
