@@ -11,8 +11,8 @@ Create Session With REST
 
 *** Test Cases ***
 Call Rest Happy Flow
-  ${result}=    Get Request  squareRoots  /calc?inputValue=25
-  Should be equal as numbers  ${result.status_code}  200
-  ${json}=    To Json    ${result.content}    pretty_print=True
+  ${result}=  Get Request  squareRoots  /calc?inputValue=25
+  Should Be Equal As Numbers  ${result.status_code}  200
+  ${json}=    To Json  ${result.content}  pretty_print=True
   Log  ${json}
-  Dictionary Should Contain Item    ${result.json()}  outputValue  5.0
+  Dictionary Should Contain Item  ${result.json()}  outputValue  5.0
