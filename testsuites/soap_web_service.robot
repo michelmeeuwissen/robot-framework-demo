@@ -1,7 +1,7 @@
 *** Settings ***
 Library         SudsLibrary
 Resource        ${CURDIR}${/}..${/}global${/}keywords.robot
-Force Tags      webservice
+Force Tags      soap
 
 *** Test Cases ***
 Call Webservice Happy Flow
